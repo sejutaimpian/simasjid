@@ -1,0 +1,1 @@
+<img src="{{ asset('assets/logo-masjid.png') }}" alt="Logo Masjid Baiturrahim" class="w-1/2 mx-auto md:max-w-sm">
