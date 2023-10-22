@@ -20,8 +20,8 @@ class ArticleFactory extends Factory
             'title' => fake()->sentence(mt_rand(3, 8)),
             'category_id' => mt_rand(1, 2),
             'slug' => fake()->slug(),
-            'excerpt' => fake()->paragraph(2),
-            'image' => 'article' . mt_rand(1, 9) . '.png',
+            'excerpt' => fake()->paragraph(1),
+            'image' => 'Article Image/article' . mt_rand(1, 9) . '.png',
             'body' => fake()->paragraph(mt_rand(20, 50)),
         ];
     }

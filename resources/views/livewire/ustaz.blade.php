@@ -39,7 +39,7 @@ title('Ustaz');
         @foreach ($this->ustaz as $ustaz)
         <div class="relative overflow-hidden rounded-lg group">
             <img class="object-cover max-w-full aspect-square lg:aspect-video"
-                src="{{ asset('img'). '/' . $ustaz->image }}" alt="{{ $ustaz->name }}">
+                src="{{ asset('storage'). '/' . $ustaz->image }}" alt="{{ $ustaz->name }}">
             <div
                 class="absolute inset-x-0 bottom-0 px-4 py-1 text-xl text-white duration-200 bg-slate-900/80 md:translate-y-full group-hover:translate-y-0">
                 {{ $ustaz->name }}

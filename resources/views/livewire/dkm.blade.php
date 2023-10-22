@@ -42,7 +42,7 @@ title('Dewan Kemakmuran Masjid');
         @foreach ($this->dkm as $dkm)
         <div class="relative overflow-hidden rounded-lg group">
             <img class="object-cover max-w-full aspect-square lg:aspect-video"
-                src="{{ asset('img') . '/' . $dkm->image }}" alt="{{ $dkm->name }}">
+                src="{{ asset('storage') . '/' . $dkm->image }}" alt="{{ $dkm->name }}">
             <div
                 class="absolute inset-x-0 bottom-0 px-4 pt-2 pb-1 text-xl text-white duration-200 bg-slate-900/80 md:translate-y-full group-hover:translate-y-0">
                 <div class="px-2 text-sm rounded bg-emerald-500 w-fit">{{ $dkm->position }}</div>

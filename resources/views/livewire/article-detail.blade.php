@@ -17,7 +17,7 @@ title('Artikel Detail');
 
 <div class="container mx-auto my-5 md:my-8">
     <div class="flex flex-col gap-2 mx-4 md:gap-4">
-        <img class="w-auto mx-auto rounded-lg md:max-w-3xl" src="{{ asset('img/article') . '/' . $article->image }}"
+        <img class="w-auto mx-auto rounded-lg md:max-w-3xl" src="{{ asset('storage') . '/' . $article->image }}"
             alt="{{ $article->title }}" />
         <div class="flex gap-3">
             <div class="flex items-center gap-2">
@@ -43,8 +43,8 @@ title('Artikel Detail');
         <h5 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {{ $article->title }}
         </h5>
-        <div class="">
-            {{ $article->body }}
+        <div class="[&>*]:mb-4">
+            {!! $article->body !!}
         </div>
     </div>
 </div>

@@ -54,7 +54,7 @@ title('Artikel');
             <div
                 class="flex flex-col gap-2 p-2 bg-white border border-gray-200 shadow rounded-xl dark:bg-gray-800 dark:border-gray-700">
                 <a href="{{ url('artikel') . '/' . $article->slug }}" wire:navigate>
-                    <img class="rounded-lg" src="{{ asset('img/article') . '/' . $article->image }}" alt="" />
+                    <img class="rounded-lg" src="{{ asset('storage') . '/' . $article->image }}" alt="" />
                 </a>
                 <div class="">
                     <button wire:click="$set('category', {{ $article->category->id }})"

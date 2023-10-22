@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
             'image' => 'admin.png',
             'email' => 'derissulistina@gmail.com',
             'email_verified_at' => now(),
-            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'password' => '$2y$10$L2zw9WUoCB9bdYYIspyDN.n7/a01TNOWmExjx5HfKi.4NRrz09vwS', // admin
             'remember_token' => Str::random(10),
         ]);
         Profile::create([
@@ -41,31 +41,31 @@ class DatabaseSeeder extends Seeder
 
         Ustaz::create([
             'name' => 'Ustaz. Abdul Muiz',
-            'image' => 'u1.jpg',
+            'image' => 'Ustaz Image/u1.jpg',
             'link' => '#',
             'description' => 'description',
         ]);
         Ustaz::create([
             'name' => 'Mister. Rangga Saputra',
-            'image' => 'u6.jpg',
+            'image' => 'Ustaz Image/u6.jpg',
             'link' => '#',
             'description' => 'description',
         ]);
         Ustaz::create([
             'name' => 'Ustazah. Santi Mustika Dewi',
-            'image' => 'u5.jpg',
+            'image' => 'Ustaz Image/u5.jpg',
             'link' => '#',
             'description' => 'description',
         ]);
         Ustaz::create([
             'name' => 'Ustazah. Resti Aulia',
-            'image' => 'u2.jpg',
+            'image' => 'Ustaz Image/u2.jpg',
             'link' => '#',
             'description' => 'description',
         ]);
         Ustaz::create([
             'name' => 'Ustazah. Raisya Camelia',
-            'image' => 'u7.jpg',
+            'image' => 'Ustaz Image/u7.jpg',
             'link' => '#',
             'description' => 'description',
         ]);
@@ -73,70 +73,70 @@ class DatabaseSeeder extends Seeder
         Dkm::create([
             'name' => 'M Rizal Maulana',
             'position' => 'Ketua',
-            'image' => 'DKM1.jpg',
+            'image' => 'Dkm Image/DKM1.jpg',
             'link' => '#',
             'description' => 'description',
         ]);
         Dkm::create([
             'name' => 'Yusuf Ilyas',
             'position' => 'Sekretaris',
-            'image' => 'DKM2.jpg',
+            'image' => 'Dkm Image/DKM2.jpg',
             'link' => '#',
             'description' => 'description',
         ]);
         Dkm::create([
             'name' => 'Vina Maryanti',
             'position' => 'Bendahara',
-            'image' => 'DKM3.jpg',
+            'image' => 'Dkm Image/DKM3.jpg',
             'link' => '#',
             'description' => 'description',
         ]);
         Dkm::create([
             'name' => 'Bagas Mahardika',
             'position' => 'Bidang Keagamaan',
-            'image' => 'DKM4.jpg',
+            'image' => 'Dkm Image/DKM4.jpg',
             'link' => '#',
             'description' => 'description',
         ]);
         Dkm::create([
             'name' => 'Sintya Sari',
             'position' => 'Bidang Kebersihan',
-            'image' => 'DKM5.jpg',
+            'image' => 'Dkm Image/DKM5.jpg',
             'link' => '#',
             'description' => 'description',
         ]);
         Dkm::create([
             'name' => 'Fikri Purnama',
             'position' => 'Bidang Keamanan',
-            'image' => 'DKM6.jpg',
+            'image' => 'Dkm Image/DKM6.jpg',
             'link' => '#',
             'description' => 'description',
         ]);
         Dkm::create([
             'name' => 'Anwar Fikri',
             'position' => 'Bidang Pemberdayaan Science',
-            'image' => 'DKM7.jpg',
+            'image' => 'Dkm Image/DKM7.jpg',
             'link' => '#',
             'description' => 'description',
         ]);
         Dkm::create([
             'name' => 'Mila Nur Jannah',
             'position' => 'Bidang Pemberdayaan Teknologi',
-            'image' => 'DKM8.jpg',
+            'image' => 'Dkm Image/DKM8.jpg',
             'link' => '#',
             'description' => 'description',
         ]);
         Dkm::create([
             'name' => 'Annisa Wulandari',
             'position' => 'Bidang Pemberdayaan Perempuan',
-            'image' => 'DKM9.jpg',
+            'image' => 'Dkm Image/DKM9.jpg',
             'link' => '#',
             'description' => 'description',
         ]);
         Dkm::create([
-            'name' => 'Fatin Sholehah',
-            'position' => 'Bidang Pemberdayaan Perempuan',
-            'image' => 'DKM10.jpg',
+            'name' => 'Brother Oyen',
+            'position' => 'Bidang Kebahagiaan Jamaah',
+            'image' => 'Dkm Image/kucing.png',
             'link' => '#',
             'description' => 'description',
         ]);
@@ -187,7 +187,7 @@ class DatabaseSeeder extends Seeder
             'slug' => 'hiburan',
         ]);
 
-        Article::factory(10)->create();
+        Article::factory(100)->create();
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
